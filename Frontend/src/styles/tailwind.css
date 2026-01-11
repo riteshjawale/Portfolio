@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary: #0070F3; /* blue-600 - Vercel blue for trust and technical competence */
+    --color-primary-foreground: #FFFFFF; /* white - ensures WCAG AA contrast */
+    
+    /* Secondary Colors */
+    --color-secondary: #7C3AED; /* purple-600 - creative problem-solving moments */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #10B981; /* green-500 - success green for completed projects */
+    --color-accent-foreground: #FFFFFF; /* white */
+    
+    /* Background Colors */
+    --color-background: #FAFAFA; /* gray-50 - clean canvas */
+    --color-foreground: #1A1A1A; /* gray-900 - high contrast text */
+    
+    /* Surface Colors */
+    --color-card: #FFFFFF; /* white - pure white for component elevation */
+    --color-card-foreground: #1A1A1A; /* gray-900 */
+    
+    /* Muted Colors */
+    --color-muted: #F3F4F6; /* gray-100 */
+    --color-muted-foreground: #6B7280; /* gray-500 - clear hierarchy */
+    
+    /* Popover Colors */
+    --color-popover: #FFFFFF; /* white */
+    --color-popover-foreground: #1A1A1A; /* gray-900 */
+    
+    /* Border & Input */
+    --color-border: #E5E7EB; /* gray-200 - hairline borders */
+    --color-input: #E5E7EB; /* gray-200 */
+    --color-ring: #0070F3; /* blue-600 - focus ring */
+    
+    /* Status Colors */
+    --color-success: #059669; /* green-600 - confident confirmation */
+    --color-success-foreground: #FFFFFF; /* white */
+    
+    --color-warning: #D97706; /* amber-600 - helpful attention */
+    --color-warning-foreground: #FFFFFF; /* white */
+    
+    --color-error: #DC2626; /* red-600 - clear problem indication */
+    --color-error-foreground: #FFFFFF; /* white */
+    
+    --color-destructive: #DC2626; /* red-600 */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Code Theme Colors */
+    --color-code-bg: #1E1E1E; /* gray-900 - code editor background */
+    --color-code-text: #D4D4D4; /* gray-300 - code text */
+    --color-code-comment: #6A9955; /* green-600 - code comments */
+    --color-code-keyword: #569CD6; /* blue-400 - code keywords */
+    --color-code-string: #CE9178; /* orange-400 - code strings */
+    --color-code-function: #DCDCAA; /* yellow-200 - code functions */
+    
+    /* Conversion Colors */
+    --color-conversion: #00D9FF; /* cyan-400 - bright cyan for CTAs */
+    --color-conversion-foreground: #1A1A1A; /* gray-900 */
+    
+    /* Brand Colors */
+    --color-brand-react: #61DAFB; /* cyan-300 - React blue */
+    --color-brand-javascript: #F7DF1E; /* yellow-400 - JavaScript yellow */
+    
+    /* Spacing & Layout */
+    --radius: 0.5rem; /* 8px - consistent border radius */
+    --radius-lg: 0.75rem; /* 12px */
+    --radius-sm: 0.25rem; /* 4px */
+  }
+
+  .dark {
+    /* Primary Colors */
+    --color-primary: #3B82F6; /* blue-500 - brighter for dark mode */
+    --color-primary-foreground: #FFFFFF; /* white */
+    
+    /* Secondary Colors */
+    --color-secondary: #8B5CF6; /* purple-500 */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #34D399; /* green-400 */
+    --color-accent-foreground: #1A1A1A; /* gray-900 */
+    
+    /* Background Colors */
+    --color-background: #0D1117; /* gray-950 - GitHub dark theme */
+    --color-foreground: #F0F6FC; /* gray-50 - high contrast white */
+    
+    /* Surface Colors */
+    --color-card: #161B22; /* gray-900 - elevated surface */
+    --color-card-foreground: #F0F6FC; /* gray-50 */
+    
+    /* Muted Colors */
+    --color-muted: #1F2937; /* gray-800 */
+    --color-muted-foreground: #8B949E; /* gray-400 - muted gray */
+    
+    /* Popover Colors */
+    --color-popover: #161B22; /* gray-900 */
+    --color-popover-foreground: #F0F6FC; /* gray-50 */
+    
+    /* Border & Input */
+    --color-border: #30363D; /* gray-700 - subtle borders */
+    --color-input: #30363D; /* gray-700 */
+    --color-ring: #3B82F6; /* blue-500 */
+    
+    /* Status Colors */
+    --color-success: #10B981; /* green-500 */
+    --color-success-foreground: #FFFFFF; /* white */
+    
+    --color-warning: #F59E0B; /* amber-500 */
+    --color-warning-foreground: #1A1A1A; /* gray-900 */
+    
+    --color-error: #EF4444; /* red-500 */
+    --color-error-foreground: #FFFFFF; /* white */
+    
+    --color-destructive: #EF4444; /* red-500 */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Code Theme Colors */
+    --color-code-bg: #0D1117; /* gray-950 */
+    --color-code-text: #E6EDF3; /* gray-100 */
+    --color-code-comment: #7EE787; /* green-400 */
+    --color-code-keyword: #79C0FF; /* blue-300 */
+    --color-code-string: #FFA657; /* orange-300 */
+    --color-code-function: #D2A8FF; /* purple-300 */
+    
+    /* Conversion Colors */
+    --color-conversion: #06B6D4; /* cyan-500 */
+    --color-conversion-foreground: #FFFFFF; /* white */
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+  }
+
+  code, pre {
+    font-family: 'Fira Code', monospace;
+  }
+}
+
+@layer components {
+  .header-logo {
+    @apply flex items-center gap-3 transition-all duration-300;
+  }
+.header-logo-icon  {
+    @apply w-10 h-10 rounded-lg flex items-center justify-center;
+    @apply transition-all duration-300;
+  }
+
+  .header-logo-text {
+    @apply text-xl font-bold text-foreground transition-all duration-300;
+  }
+.header-logo:hover .header-logo-icon  {
+    @apply scale-105;
+  }
+
+  .nav-link {
+    @apply relative px-4 py-2 text-sm font-medium text-muted-foreground;
+    @apply transition-colors duration-200 hover:text-foreground;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary;
+    @apply transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .nav-link.active {
+    @apply text-foreground;
+  }
+
+  .nav-link.active::after {
+    @apply w-full;
+  }
+
+  .mobile-menu-button {
+    @apply p-2 rounded-lg text-foreground hover:bg-muted;
+    @apply transition-colors duration-200;
+  }
+
+  .mobile-menu-overlay {
+    @apply fixed inset-0 bg-background z-40;
+    @apply flex flex-col;
+  }
+
+  .mobile-nav-link {
+    @apply block px-6 py-4 text-lg font-medium text-muted-foreground;
+    @apply border-l-4 border-transparent;
+    @apply transition-all duration-200;
+  }
+
+  .mobile-nav-link:hover {
+    @apply text-foreground bg-muted border-primary;
+  }
+.mobile-nav-link.active  {
+    @apply text-foreground border-primary;
+  }
+
+  .floating-cta {
+    @apply fixed bottom-6 right-6 z-50;
+    @apply px-6 py-3 rounded-full;
+    @apply bg-conversion text-conversion-foreground;
+    @apply font-mono font-semibold text-sm;
+    @apply shadow-lg hover:shadow-xl;
+    @apply transition-all duration-300;
+    @apply hover:-translate-y-1;
+  }
+
+  .code-block {
+    @apply bg-code-bg text-code-text rounded-lg p-4;
+    @apply font-mono text-sm overflow-x-auto;
+  }
+
+  .syntax-keyword {
+    @apply text-[var(--color-code-keyword)];
+  }
+
+  .syntax-string {
+    @apply text-[var(--color-code-string)];
+  }
+
+  .syntax-function {
+    @apply text-[var(--color-code-function)];
+  }
+
+  .syntax-comment {
+    @apply text-[var(--color-code-comment)];
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+}
