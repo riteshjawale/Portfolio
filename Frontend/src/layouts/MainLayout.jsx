@@ -10,7 +10,7 @@ const MainLayout = () => {
       <Header />
       
       <main className="flex-1 pt-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
           <Breadcrumbs />
           <Outlet />
         </div>

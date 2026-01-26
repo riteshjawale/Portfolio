@@ -7,7 +7,6 @@ import HeroSection from './components/HeroSection';
 import SkillsVisualization from './components/SkillsVisualization';
 import FeaturedProjects from './components/FeaturedProjects';
 import TestimonialsSection from './components/TestimonialsSection';
-import GitHubActivity from './components/GitHubActivity';
 import PerformanceMetrics from './components/PerformanceMetrics';
 import CTASection from './components/CTASection';
 
@@ -41,13 +40,14 @@ const Homepage = () => {
         <Header />
         
         <main className="flex-1 pt-16">
-          <HeroSection />
-          <SkillsVisualization />
-          <FeaturedProjects />
-          <TestimonialsSection />
-          <GitHubActivity />
-          <PerformanceMetrics />
-          <CTASection />
+          <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+            <HeroSection />
+            <SkillsVisualization />
+            <FeaturedProjects />
+            <TestimonialsSection />
+            <PerformanceMetrics />
+            <CTASection />
+          </div>
         </main>
 
         <Footer />

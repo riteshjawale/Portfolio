@@ -114,7 +114,7 @@ const ToolsSection = () => {
 
 
   return (
-    <section className="py-12 md:py-16 lg:py-20 bg-background">
+    <section className=" bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full mb-4">
