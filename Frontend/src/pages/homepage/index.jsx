@@ -21,7 +21,7 @@ const Homepage = () => {
         <title>Ritesh Jawale - Full Stack Developer | React & Node.js Expert</title>
         <meta
           name="description"
-          content="Professional full-stack developer specializing in React, Node.js, and cloud architecture. Building scalable web applications with 8+ years of experience."
+          content="Professional full-stack developer specializing in React, Node.js, and cloud architecture. Building scalable web applications with 2+ years of experience."
         />
         <meta
           name="keywords"

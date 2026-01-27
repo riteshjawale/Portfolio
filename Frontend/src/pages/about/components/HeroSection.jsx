@@ -2,14 +2,15 @@ import { useState } from 'react';
 import Image from '../../../components/AppImage';
 import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
+import dp from '../../../assets/Ritesh.png'
 
 const HeroSection = () => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   const stats = [
-  { value: '8+', label: 'Years Experience', icon: 'Calendar' },
-  { value: '150+', label: 'Projects Completed', icon: 'Briefcase' },
-  { value: '50+', label: 'Happy Clients', icon: 'Users' },
+  { value: '2+', label: 'Years Experience', icon: 'Calendar' },
+  { value: '8+', label: 'Projects Completed', icon: 'Briefcase' },
+  { value: '8+', label: 'Happy Clients', icon: 'Users' },
   { value: '95%', label: 'Client Retention', icon: 'TrendingUp' }];
 
 
@@ -74,7 +75,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl transform rotate-6"></div>
               <div className="absolute inset-0 bg-card rounded-2xl shadow-2xl overflow-hidden transform -rotate-3">
                 <Image
-                  src="https://img.rocket.new/generatedImages/rocket_gen_img_19b31bf9c-1763295924030.png"
+                  src={dp}
                   alt="Professional portrait of Ritesh Jawale, a confident male developer with short brown hair wearing a navy blue blazer and white shirt, smiling warmly in a modern office setting with natural lighting"
                   className={`w-full h-full object-cover transition-opacity duration-500 ${isImageLoaded ? 'opacity-100' : 'opacity-0'}`}
                   onLoad={() => setIsImageLoaded(true)} />

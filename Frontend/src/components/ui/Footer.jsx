@@ -111,12 +111,12 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2">
                 <Icon name="MapPin" size={16} className="text-muted-foreground mt-0.5" />
-                <span className="text-sm text-muted-foreground">San Francisco, CA</span>
+                <span className="text-sm text-muted-foreground">Hinjawadi, Pune, Maharashtra</span>
               </li>
-              <li className="flex items-start gap-2">
+              {/* <li className="flex items-start gap-2">
                 <Icon name="Clock" size={16} className="text-muted-foreground mt-0.5" />
                 <span className="text-sm text-muted-foreground">Mon - Fri: 9AM - 6PM PST</span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

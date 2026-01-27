@@ -440,7 +440,7 @@ const Skills = () => {
         <Header />
 
         <main className="pt-2">
-          <section className="bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 py-12 md:py-16 lg:py-20">
+          {/* <section className="bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 py-12 md:py-16 lg:py-20">
             <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
               <div className="max-w-4xl mx-auto text-center space-y-4 md:space-y-6">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium">
@@ -456,12 +456,12 @@ const Skills = () => {
                 </p>
               </div>
             </div>
-          </section>
+          </section> */}
 
           <section className="py-12 md:py-16 lg:py-20">
             <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
               <div className="max-w-7xl mx-auto space-y-8 md:space-y-12 lg:space-y-16">
-                <div className="text-center space-y-3">
+                {/* <div className="text-center space-y-3">
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-mono">
                     Interactive Code Playground
                   </h2>
@@ -470,7 +470,7 @@ const Skills = () => {
                   </p>
                 </div>
 
-                <CodePlayground />
+                <CodePlayground /> */}
 
                 <div className="text-center space-y-3 pt-8">
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-mono">

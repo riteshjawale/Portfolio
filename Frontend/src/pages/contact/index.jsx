@@ -515,7 +515,7 @@ const Contact = () => {
                       <Icon name="MapPin" size={20} className="text-primary flex-shrink-0 mt-0.5" />
                       <div>
                         <p className="text-sm font-medium">Location</p>
-                        <p className="text-sm text-muted-foreground">San Francisco, CA</p>
+                        <p className="text-sm text-muted-foreground">Hinjawadi, Pune, Maharashtra</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">

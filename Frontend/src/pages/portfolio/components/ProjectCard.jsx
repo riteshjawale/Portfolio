@@ -64,20 +64,6 @@ const ProjectCard = ({ project, index }) => {
             {project?.difficulty}
           </div>
         )}
-        {project?.githubUrl && (
-          <div className="absolute top-4 right-4 z-10">
-            <Button
-              variant="outline"
-              size="sm"
-              iconName="Github"
-              iconPosition="left"
-              onClick={() => window.open(project?.githubUrl, '_blank')}
-              className="bg-white/90 backdrop-blur-sm border-gray-300 hover:bg-white hover:border-gray-400 text-gray-700 hover:text-gray-900 shadow-md"
-            >
-              {project?.stars}
-            </Button>
-          </div>
-        )}
       </div>
       <div className="p-4 md:p-5 lg:p-6 space-y-3">
         <div className="flex items-start justify-between gap-3">

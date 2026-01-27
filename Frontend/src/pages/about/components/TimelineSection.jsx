@@ -196,7 +196,7 @@ const TimelineSection = () => {
           <div className="inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl border border-primary/20">
             <Icon name="TrendingUp" size={24} color="var(--color-primary)" />
             <div className="text-left">
-              <div className="text-2xl md:text-3xl font-bold text-foreground">8+ Years</div>
+              <div className="text-2xl md:text-3xl font-bold text-foreground">5+ Years</div>
               <div className="text-sm text-muted-foreground">of continuous growth and learning</div>
             </div>
           </div>

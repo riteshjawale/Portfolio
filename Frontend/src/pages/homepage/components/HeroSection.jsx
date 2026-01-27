@@ -67,14 +67,14 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="relative py-12 md:py-16 lg:py-24 overflow-hidden">
+    <section className="relative py-12 md:py-16 lg:py-2 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-6 md:space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-mono">
               <Icon name="Sparkles" size={16} />
-              <span>Available for new opportunities</span>
+              <span>Available for freelance projects and full-time opportunities</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
@@ -110,12 +110,12 @@ const HeroSection = () => {
             <div className="flex items-center gap-6 pt-4">
               <div className="flex items-center gap-2">
                 <Icon name="CheckCircle2" size={20} className="text-success" />
-                <span className="text-sm text-muted-foreground">50+ Projects Delivered</span>
+                <span className="text-sm text-muted-foreground">8+ Projects Delivered</span>
               </div>
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <Icon name="Star" size={20} className="text-warning" />
-                <span className="text-sm text-muted-foreground">98% Client Satisfaction</span>
-              </div>
+                <span className="text-sm text-muted-foreground">100% Client Satisfaction</span>
+              </div> */}
             </div>
           </div>
 
