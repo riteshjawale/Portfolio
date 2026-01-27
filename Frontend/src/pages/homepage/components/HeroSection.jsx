@@ -74,7 +74,8 @@ const HeroSection = () => {
           <div className="space-y-6 md:space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-mono">
               <Icon name="Sparkles" size={16} />
-              <span>Available for freelance projects and full-time opportunities</span>
+              <span className="hidden sm:inline">Available for freelance projects and full-time opportunities</span>
+              <span className="sm:hidden">Open to opportunities</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">

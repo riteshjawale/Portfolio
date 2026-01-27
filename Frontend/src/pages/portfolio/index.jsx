@@ -34,9 +34,6 @@ const Portfolio = () => {
     liveUrl: "https://example-ecommerce.com",
     githubUrl: "https://github.com/example/ecommerce",
     stars: "234",
-    clientRating: "5.0",
-    clientName: "Sarah Johnson, CTO",
-    clientTestimonial: "Transformed our entire digital presence. The new platform handles 10x traffic with zero downtime.",
     isNew: true
   },
   {
@@ -53,10 +50,7 @@ const Portfolio = () => {
     difficulty: "Expert",
     liveUrl: "https://example-healthcare.com",
     githubUrl: "https://github.com/example/healthcare",
-    stars: "189",
-    clientRating: "4.9",
-    clientName: "Dr. Michael Chen",
-    clientTestimonial: "Exceptional attention to security and compliance. The system has streamlined our entire practice."
+    stars: "189"
   },
   {
     id: 3,
@@ -72,10 +66,7 @@ const Portfolio = () => {
     difficulty: "Expert",
     liveUrl: "https://example-collab.com",
     githubUrl: "https://github.com/example/collab",
-    stars: "412",
-    clientRating: "4.8",
-    clientName: "Ritesh Rivera, Product Lead",
-    clientTestimonial: "Built exactly what we envisioned. The real-time features work flawlessly even under heavy load."
+    stars: "412"
   },
   {
     id: 4,
@@ -91,10 +82,7 @@ const Portfolio = () => {
     difficulty: "Advanced",
     liveUrl: "https://example-finance.com",
     githubUrl: "https://github.com/example/finance",
-    stars: "156",
-    clientRating: "5.0",
-    clientName: "Jennifer Park, CFO",
-    clientTestimonial: "The data visualization capabilities exceeded our expectations. Critical for our decision-making process."
+    stars: "156"
   },
   {
     id: 5,
@@ -110,10 +98,7 @@ const Portfolio = () => {
     difficulty: "Intermediate",
     liveUrl: "https://example-social.com",
     githubUrl: "https://github.com/example/social",
-    stars: "278",
-    clientRating: "4.7",
-    clientName: "Marcus Thompson, Marketing Director",
-    clientTestimonial: "Saves our team 20+ hours weekly. The AI suggestions are surprisingly accurate and helpful."
+    stars: "278"
   },
   {
     id: 6,
@@ -129,10 +114,7 @@ const Portfolio = () => {
     difficulty: "Advanced",
     liveUrl: "https://example-lms.com",
     githubUrl: "https://github.com/example/lms",
-    stars: "321",
-    clientRating: "4.9",
-    clientName: "Dr. Emily Watson, Dean",
-    clientTestimonial: "Revolutionized our online education delivery. Students love the intuitive interface and features."
+    stars: "321"
   },
   {
     id: 7,
@@ -148,10 +130,7 @@ const Portfolio = () => {
     difficulty: "Intermediate",
     liveUrl: "https://example-food.com",
     githubUrl: "https://github.com/example/food",
-    stars: "198",
-    clientRating: "4.8",
-    clientName: "Tony Martinez, Restaurant Owner",
-    clientTestimonial: "Increased our online orders by 400%. The system is reliable and easy to use for both staff and customers."
+    stars: "198"
   },
   {
     id: 8,
@@ -167,10 +146,7 @@ const Portfolio = () => {
     difficulty: "Intermediate",
     liveUrl: "https://example-fitness.com",
     githubUrl: "https://github.com/example/fitness",
-    stars: "267",
-    clientRating: "4.6",
-    clientName: "Lisa Anderson, Fitness Coach",
-    clientTestimonial: "My clients love tracking their progress. The app motivates them to stay consistent with their goals."
+    stars: "267"
   },
   {
     id: 9,
@@ -186,10 +162,7 @@ const Portfolio = () => {
     difficulty: "Advanced",
     liveUrl: "https://example-property.com",
     githubUrl: "https://github.com/example/property",
-    stars: "143",
-    clientRating: "5.0",
-    clientName: "Robert Kim, Property Manager",
-    clientTestimonial: "Manages 200+ properties effortlessly. The automation features save countless hours of manual work."
+    stars: "143"
   },
   {
     id: 10,
@@ -205,10 +178,7 @@ const Portfolio = () => {
     difficulty: "Intermediate",
     liveUrl: "https://example-events.com",
     githubUrl: "https://github.com/example/events",
-    stars: "187",
-    clientRating: "4.7",
-    clientName: "Amanda Foster, Event Coordinator",
-    clientTestimonial: "Streamlined our entire event workflow. The virtual event features were a game-changer during the pandemic."
+    stars: "187"
   },
   {
     id: 11,
@@ -223,10 +193,7 @@ const Portfolio = () => {
     linesOfCode: "51K+",
     difficulty: "Advanced",
     githubUrl: "https://github.com/example/inventory",
-    stars: "165",
-    clientRating: "4.9",
-    clientName: "David Chen, Operations Manager",
-    clientTestimonial: "Reduced inventory discrepancies by 95%. The real-time tracking is incredibly accurate and reliable."
+    stars: "165"
   },
   {
     id: 12,
@@ -242,10 +209,7 @@ const Portfolio = () => {
     difficulty: "Advanced",
     liveUrl: "https://example-travel.com",
     githubUrl: "https://github.com/example/travel",
-    stars: "298",
-    clientRating: "4.8",
-    clientName: "Sophie Laurent, Travel Agency Owner",
-    clientTestimonial: "Our customers love the seamless booking experience. The AI recommendations are impressively accurate."
+    stars: "298"
   }];
 
 

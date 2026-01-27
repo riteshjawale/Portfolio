@@ -71,7 +71,7 @@ const HeroSection = () => {
           </div>
 
           <div className="relative">
-            <div className="relative aspect-square max-w-md mx-auto">
+            <div className="relative aspect-[3/4] md:aspect-square max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl transform rotate-6"></div>
               <div className="absolute inset-0 bg-card rounded-2xl shadow-2xl overflow-hidden transform -rotate-3">
                 <Image
@@ -81,10 +81,10 @@ const HeroSection = () => {
                   onLoad={() => setIsImageLoaded(true)} />
 
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-6 py-3 rounded-lg shadow-lg">
+              <div className="absolute bottom-4 right-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg shadow-lg z-10">
                 <div className="flex items-center gap-2">
-                  <Icon name="CheckCircle" size={20} />
-                  <span className="font-mono font-semibold">Available for Projects</span>
+                  <Icon name="CheckCircle" size={16} />
+                  <span className="font-mono font-semibold text-sm">Available for Projects</span>
                 </div>
               </div>
             </div>

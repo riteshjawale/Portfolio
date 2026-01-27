@@ -99,16 +99,6 @@ const ProjectCard = ({ project, index }) => {
           )}
         </div>
 
-        {project?.clientTestimonial && (
-          <div className="pt-3 border-t border-border">
-            <p className="text-xs text-muted-foreground italic line-clamp-2">
-              "{project?.clientTestimonial}"
-            </p>
-            <p className="text-xs text-muted-foreground font-semibold mt-1">
-              — {project?.clientName}
-            </p>
-          </div>
-        )}
       </div>
     </motion.div>
   );
