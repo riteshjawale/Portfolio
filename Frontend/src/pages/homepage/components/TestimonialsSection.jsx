@@ -142,11 +142,11 @@ const TestimonialsSection = () => {
             <div className="text-xs md:text-sm text-muted-foreground">Client Satisfaction</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-secondary mb-2">30+</div>
+            <div className="text-3xl md:text-4xl font-bold text-secondary mb-2">8+</div>
             <div className="text-xs md:text-sm text-muted-foreground">Happy Clients</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-accent mb-2">50+</div>
+            <div className="text-3xl md:text-4xl font-bold text-accent mb-2">8+</div>
             <div className="text-xs md:text-sm text-muted-foreground">Projects Delivered</div>
           </div>
           <div className="text-center">

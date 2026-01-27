@@ -298,31 +298,9 @@ const Portfolio = () => {
         <FloatingCTA />
 
         <main className="flex-1 pt-16">
-          <div className="bg-gradient-to-b from-primary/5 to-transparent py-12 md:py-16 lg:py-20">
-            <div className="container mx-auto px-4">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="text-center max-w-3xl mx-auto mb-8 md:mb-12">
+          
 
-                <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-mono font-semibold mb-4">
-                  <Icon name="Briefcase" size={16} />
-                  <span>Project Showcase</span>
-                </div>
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-mono text-foreground mb-4">
-                  Portfolio & Case Studies
-                </h1>
-                <p className="text-base md:text-lg text-muted-foreground">
-                  Explore my journey through {projects?.length} production-ready projects. Each showcases clean code, creative problem-solving, and user-centered design principles.
-                </p>
-              </motion.div>
-
-              <StatsOverview projects={projects} />
-            </div>
-          </div>
-
-          <div className="container mx-auto px-4 py-8 md:py-12 lg:py-16">
+          <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 md:py-12 lg:py-16">
             <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-8 mb-8">
               <div className="flex-1 w-full">
                 <FilterBar
@@ -373,8 +351,32 @@ const Portfolio = () => {
             <TechnologyStack projects={projects} />
           </div>
 
-          <div className="bg-gradient-to-t from-primary/5 to-transparent py-12 md:py-16 lg:py-20">
-            <div className="container mx-auto px-4">
+          {/* <div className="bg-gradient-to-b from-primary/5 to-transparent py-12 md:py-16 lg:py-20">
+            <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="text-center max-w-3xl mx-auto mb-8 md:mb-12">
+
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-mono font-semibold mb-4">
+                  <Icon name="Briefcase" size={16} />
+                  <span>Project Showcase</span>
+                </div>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-mono text-foreground mb-4">
+                  Portfolio & Case Studies
+                </h1>
+                <p className="text-base md:text-lg text-muted-foreground">
+                  Explore my journey through {projects?.length} production-ready projects. Each showcases clean code, creative problem-solving, and user-centered design principles.
+                </p>
+              </motion.div>
+
+              <StatsOverview projects={projects} />
+            </div>
+          </div> */}
+
+          {/* <div className="bg-gradient-to-t from-primary/5 to-transparent py-12 md:py-16 lg:py-20">
+            <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -389,7 +391,7 @@ const Portfolio = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                   <a href="/contact" className="w-full sm:w-auto">
-                    <button className="w-full sm:w-auto px-8 py-3 bg-primary text-primary-foreground rounded-lg font-mono font-semibold hover:bg-primary/90 transition-colors duration-200">
+                    <button className="w-full sm:w-auto px-8 py-3 bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 text-primary-foreground rounded-lg font-mono font-semibold hover:from-blue-700 hover:via-blue-600 hover:to-cyan-600 shadow-lg hover:shadow-xl transition-all duration-300">
                       Start a Project
                     </button>
                   </a>
@@ -402,7 +404,7 @@ const Portfolio = () => {
                 </div>
               </motion.div>
             </div>
-          </div>
+          </div> */}
         </main>
 
         <Footer />

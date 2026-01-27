@@ -138,15 +138,6 @@ const FeaturedProjects = () => {
 
                     View Live Demo
                   </Button>
-                  <Button
-                    variant="outline"
-                    iconName="Github"
-                    iconPosition="left"
-                    onClick={() => window.open(currentProject?.githubUrl, '_blank')}
-                    className="flex-1">
-
-                    Source Code
-                  </Button>
                 </div>
               </div>
             </div>

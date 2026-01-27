@@ -7,7 +7,6 @@ import HeroSection from './components/HeroSection';
 import SkillsVisualization from './components/SkillsVisualization';
 import FeaturedProjects from './components/FeaturedProjects';
 import TestimonialsSection from './components/TestimonialsSection';
-import GitHubActivity from './components/GitHubActivity';
 import PerformanceMetrics from './components/PerformanceMetrics';
 import CTASection from './components/CTASection';
 
@@ -22,7 +21,7 @@ const Homepage = () => {
         <title>Ritesh Jawale - Full Stack Developer | React & Node.js Expert</title>
         <meta
           name="description"
-          content="Professional full-stack developer specializing in React, Node.js, and cloud architecture. Building scalable web applications with 8+ years of experience."
+          content="Professional full-stack developer specializing in React, Node.js, and cloud architecture. Building scalable web applications with 2+ years of experience."
         />
         <meta
           name="keywords"
@@ -41,13 +40,14 @@ const Homepage = () => {
         <Header />
         
         <main className="flex-1 pt-16">
-          <HeroSection />
-          <SkillsVisualization />
-          <FeaturedProjects />
-          <TestimonialsSection />
-          <GitHubActivity />
-          <PerformanceMetrics />
-          <CTASection />
+          <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+            <HeroSection />
+            <SkillsVisualization />
+            <FeaturedProjects />
+            <TestimonialsSection />
+            <PerformanceMetrics />
+            <CTASection />
+          </div>
         </main>
 
         <Footer />

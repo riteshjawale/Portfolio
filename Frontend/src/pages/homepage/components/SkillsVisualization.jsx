@@ -125,15 +125,15 @@ const SkillsVisualization = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-8 md:mt-12 max-w-4xl mx-auto">
           <div className="bg-card rounded-lg p-4 md:p-6 text-center border border-border">
-            <div className="text-2xl md:text-3xl font-bold text-primary mb-2">8+</div>
+            <div className="text-2xl md:text-3xl font-bold text-primary mb-2">2+</div>
             <div className="text-xs md:text-sm text-muted-foreground">Years Experience</div>
           </div>
           <div className="bg-card rounded-lg p-4 md:p-6 text-center border border-border">
-            <div className="text-2xl md:text-3xl font-bold text-secondary mb-2">50+</div>
+            <div className="text-2xl md:text-3xl font-bold text-secondary mb-2">8+</div>
             <div className="text-xs md:text-sm text-muted-foreground">Projects Completed</div>
           </div>
           <div className="bg-card rounded-lg p-4 md:p-6 text-center border border-border">
-            <div className="text-2xl md:text-3xl font-bold text-accent mb-2">30+</div>
+            <div className="text-2xl md:text-3xl font-bold text-accent mb-2">8+</div>
             <div className="text-xs md:text-sm text-muted-foreground">Happy Clients</div>
           </div>
           <div className="bg-card rounded-lg p-4 md:p-6 text-center border border-border">

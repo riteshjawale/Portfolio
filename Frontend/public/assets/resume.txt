@@ -1,0 +1,78 @@
+Ritesh Jawale
+Sr. Software Developer
+Experience: 1 Year 1 Month
+https://www.linkedin.com/in/ritesh-jawale
+
++91-8421539554
+jawaleritesh1@gmail.com
+Pune, INDIA
+
+Frontend Developer specializing in the MERN stack with hands-on experience in React.js, JavaScript, Redux,
+HTML, and CSS. Skilled in responsive UI development, REST API integration, state management, and crossbrowser compatibility, delivering scalable and user-centric web applications.
+Javascript
+
+React.js
+
+Cross Browser Compatibility
+
+Redux
+
+Router
+
+Github
+
+HTML
+
+Postman Tool
+
+Responsive Web Design
+Mongo DB Basics
+
+Rest API Integration
+
+Node.js
+
+Tailwind CSS
+
+CSS
+
+CERTIFICATION
+Bootcamp | React | Full Stack Development
+
+WORK EXPERIENCE
+Sr. Software Developer-Intellisys IT Solutions Private Limited
+
+Nov 2024 - Present
+
+Took ownership of frontend development and feature delivery in a fast-paced startup environment, driving implementation
+from requirements to release. Worked closely with founders, product, and QA teams to ship features quickly while maintaining
+code quality. Mentored junior developers through hands-on guidance and code reviews, helping the team scale development
+speed and reliability.
+
+PROJECTS
+Financial Trading Support Platform
+
+5 Months
+
+Developed a React-based financial support platform integrated with MT5 APIs to display trading charts, bot signals, and
+trading history, with wallet management and admin-approved transactions.
+Tech Stack: React.js, JavaScript, HTML, CSS, REST APIs, Node.js (basic), MongoDB (basic)
+Vehicle Services & Solutions Platform (Freelance)
+
+4 Months
+
+Developed the React frontend for a vehicle service booking platform, implementing UI development and integration with
+Django REST APIs for garage listings, vehicle-based pricing, and service booking options.
+Tech Stack: React.js, JavaScript, HTML, CSS, REST APIs, Django (backend)
+
+EDUCATION
+B.Tech/B.E. | Mechanical
+Dr D Y Patil College of Engineering, Ambi
+Grade - 8.1/10
+
+2023
+
+ADDITIONAL INFORMATION
+Languages: Hindi, Marathi, English
+
+

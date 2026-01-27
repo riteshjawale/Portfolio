@@ -269,7 +269,7 @@ const Blog = () => {
 
         <main className="flex-1 pt-16">
           <div className="bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 py-12 md:py-16 lg:py-20">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
               <div className="max-w-4xl mx-auto text-center mb-8 md:mb-12">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-4 md:mb-6">
                   <Icon name="BookOpen" size={20} className="text-primary" />
@@ -297,7 +297,7 @@ const Blog = () => {
             </div>
           </div>
 
-          <div className="container mx-auto px-4 py-8 md:py-12 lg:py-16">
+          <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 md:py-12 lg:py-16">
             <div className="mb-12 md:mb-16 lg:mb-20">
               <FeaturedArticle article={featuredArticle} />
             </div>

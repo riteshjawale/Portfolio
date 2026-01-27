@@ -90,7 +90,7 @@ const TimelineSection = () => {
   const activeTimeline = timeline?.find(t => t?.year === activeYear);
 
   return (
-    <section className="py-12 md:py-16 lg:py-20 bg-background">
+    <section className=" bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 rounded-full mb-4">
@@ -196,7 +196,7 @@ const TimelineSection = () => {
           <div className="inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl border border-primary/20">
             <Icon name="TrendingUp" size={24} color="var(--color-primary)" />
             <div className="text-left">
-              <div className="text-2xl md:text-3xl font-bold text-foreground">8+ Years</div>
+              <div className="text-2xl md:text-3xl font-bold text-foreground">5+ Years</div>
               <div className="text-sm text-muted-foreground">of continuous growth and learning</div>
             </div>
           </div>

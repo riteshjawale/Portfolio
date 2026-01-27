@@ -439,9 +439,9 @@ const Skills = () => {
       <div className="min-h-screen bg-background">
         <Header />
 
-        <main className="pt-16">
-          <section className="bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 py-12 md:py-16 lg:py-20">
-            <div className="container mx-auto px-4">
+        <main className="pt-2">
+          {/* <section className="bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 py-12 md:py-16 lg:py-20">
+            <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
               <div className="max-w-4xl mx-auto text-center space-y-4 md:space-y-6">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-medium">
                   <Icon name="Sparkles" size={16} />
@@ -456,12 +456,12 @@ const Skills = () => {
                 </p>
               </div>
             </div>
-          </section>
+          </section> */}
 
           <section className="py-12 md:py-16 lg:py-20">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
               <div className="max-w-7xl mx-auto space-y-8 md:space-y-12 lg:space-y-16">
-                <div className="text-center space-y-3">
+                {/* <div className="text-center space-y-3">
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-mono">
                     Interactive Code Playground
                   </h2>
@@ -470,7 +470,7 @@ const Skills = () => {
                   </p>
                 </div>
 
-                <CodePlayground />
+                <CodePlayground /> */}
 
                 <div className="text-center space-y-3 pt-8">
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-mono">
@@ -548,7 +548,7 @@ const Skills = () => {
 
                 <LearningPath />
 
-                <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg p-6 md:p-8 lg:p-12 text-center space-y-4">
+                <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg text-center space-y-4">
                   <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/20 flex items-center justify-center mx-auto">
                     <Icon name="Rocket" size={32} color="var(--color-primary)" />
                   </div>
@@ -562,7 +562,7 @@ const Skills = () => {
                   <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">
                     <a
                       href="/contact"
-                      className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors duration-200 flex items-center gap-2">
+                      className="px-6 py-3 bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 text-primary-foreground rounded-lg font-medium hover:from-blue-700 hover:via-blue-600 hover:to-cyan-600 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2">
 
                       <Icon name="MessageSquare" size={20} />
                       <span>Start a Conversation</span>

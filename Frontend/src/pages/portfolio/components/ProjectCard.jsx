@@ -22,19 +22,19 @@ const ProjectCard = ({ project, index }) => {
           alt={project?.imageAlt}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        <div className={`absolute inset-0 bg-gradient-to-t from-background/95 via-background/50 to-transparent transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
           <div className="absolute bottom-4 left-4 right-4 space-y-3">
             <div className="flex items-center gap-2 flex-wrap">
               {project?.technologies?.slice(0, 3)?.map((tech, idx) => (
                 <span
                   key={idx}
-                  className="px-2 py-1 text-xs font-mono bg-primary/20 text-primary rounded"
+                  className="px-2 py-1 text-xs font-mono bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded shadow-md"
                 >
                   {tech}
                 </span>
               ))}
               {project?.technologies?.length > 3 && (
-                <span className="px-2 py-1 text-xs font-mono bg-muted text-muted-foreground rounded">
+                <span className="px-2 py-1 text-xs font-mono bg-gradient-to-r from-gray-600 to-gray-500 text-white rounded shadow-md">
                   +{project?.technologies?.length - 3}
                 </span>
               )}
@@ -51,17 +51,6 @@ const ProjectCard = ({ project, index }) => {
                   Live Demo
                 </Button>
               )}
-              {project?.githubUrl && (
-                <Button
-                  variant="outline"
-                  size="sm"
-                  iconName="Github"
-                  iconPosition="left"
-                  onClick={() => window.open(project?.githubUrl, '_blank')}
-                >
-                  {project?.stars}
-                </Button>
-              )}
             </div>
           </div>
         </div>
@@ -71,7 +60,7 @@ const ProjectCard = ({ project, index }) => {
           </div>
         )}
         {project?.difficulty && (
-          <div className="absolute top-4 left-4 px-3 py-1 bg-card/90 backdrop-blur-sm text-foreground text-xs font-mono rounded-full border border-border">
+          <div className="absolute top-4 left-4 px-3 py-1 bg-gradient-to-r from-emerald-600 to-emerald-500 text-white text-xs font-mono rounded-full shadow-lg border-0">
             {project?.difficulty}
           </div>
         )}
