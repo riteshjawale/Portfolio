@@ -10,7 +10,6 @@ import ContactMethodCard from './components/ContactMethodCard';
 import ProjectTypeCard from './components/ProjectTypeCard';
 import BudgetRangeCard from './components/BudgetRangeCard';
 import TimelineCard from './components/TimelineCard';
-import TestimonialCard from './components/TestimonialCard';
 import AvailabilityIndicator from './components/AvailabilityIndicator';
 import SuccessModal from './components/SuccessModal';
 
@@ -107,36 +106,6 @@ const Contact = () => {
   { timeline: '1-2 months', description: 'Standard project timeline' },
   { timeline: '3-6 months', description: 'Complex, phased development' },
   { timeline: '6+ months', description: 'Long-term partnerships' }];
-
-
-  const testimonials = [
-  {
-    name: 'Sarah Johnson',
-    role: 'CTO',
-    company: 'TechStart Inc',
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_186600153-1763296403185.png",
-    imageAlt: 'Professional headshot of Caucasian woman with blonde hair in business attire smiling confidently',
-    testimonial: `Working with this developer was exceptional. The code quality exceeded our expectations, and the project was delivered ahead of schedule. Communication was clear and professional throughout.`,
-    rating: 5
-  },
-  {
-    name: 'Michael Chen',
-    role: 'Product Manager',
-    company: 'InnovateLabs',
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_1cb933d20-1763293416126.png",
-    imageAlt: 'Professional headshot of Asian man with short black hair wearing navy suit and glasses',
-    testimonial: `Incredible attention to detail and problem-solving skills. The developer understood our vision perfectly and brought it to life with clean, maintainable code. Highly recommended!`,
-    rating: 5
-  },
-  {
-    name: 'Emily Rodriguez',
-    role: 'Founder',
-    company: 'StartupHub',
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_169d4bcc8-1763300337623.png",
-    imageAlt: 'Professional headshot of Hispanic woman with long dark hair in casual business attire with warm smile',
-    testimonial: `Outstanding work on our web application. The developer was proactive in suggesting improvements and always available for questions. The final product exceeded all our requirements.`,
-    rating: 5
-  }];
 
 
   const validateStep = (step) => {
@@ -527,29 +496,6 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div className="mt-12 md:mt-16">
-              <div className="text-center mb-8">
-                <h2 className="text-2xl md:text-3xl font-bold font-mono mb-2">Client Testimonials</h2>
-                <p className="text-base md:text-lg text-muted-foreground">
-                  What clients say about working with me
-                </p>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {testimonials?.map((testimonial) =>
-                <TestimonialCard
-                  key={testimonial?.name}
-                  name={testimonial?.name}
-                  role={testimonial?.role}
-                  company={testimonial?.company}
-                  image={testimonial?.image}
-                  imageAlt={testimonial?.imageAlt}
-                  testimonial={testimonial?.testimonial}
-                  rating={testimonial?.rating} />
-
-                )}
               </div>
             </div>
 

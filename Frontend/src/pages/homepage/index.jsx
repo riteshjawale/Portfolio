@@ -6,7 +6,6 @@ import FloatingCTA from '../../components/ui/FloatingCTA';
 import HeroSection from './components/HeroSection';
 import SkillsVisualization from './components/SkillsVisualization';
 import FeaturedProjects from './components/FeaturedProjects';
-import TestimonialsSection from './components/TestimonialsSection';
 import PerformanceMetrics from './components/PerformanceMetrics';
 import CTASection from './components/CTASection';
 
@@ -44,7 +43,6 @@ const Homepage = () => {
             <HeroSection />
             <SkillsVisualization />
             <FeaturedProjects />
-            <TestimonialsSection />
             <PerformanceMetrics />
             <CTASection />
           </div>
