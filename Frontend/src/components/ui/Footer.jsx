@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date()?.getFullYear();
 
   const navigationLinks = [
-    { path: '/homepage', label: 'Home' },
+    { path: '/', label: 'Home' },
     { path: '/portfolio', label: 'Portfolio' },
     { path: '/about', label: 'About' },
     { path: '/skills', label: 'Skills' },
@@ -31,7 +31,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
-            <Link to="/homepage" className="inline-flex items-center gap-3">
+            <Link to="/" className="inline-flex items-center gap-3">
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                 <Icon name="Code2" size={24} color="var(--color-primary)" />
               </div>

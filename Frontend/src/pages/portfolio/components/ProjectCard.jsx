@@ -6,6 +6,7 @@ import Button from '../../../components/ui/Button';
 
 const ProjectCard = ({ project, index }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const hasLiveDemo = project?.liveUrl && !project?.liveUrl?.includes('example');
 
   return (
     <motion.div
@@ -40,7 +41,7 @@ const ProjectCard = ({ project, index }) => {
               )}
             </div>
             <div className="flex items-center gap-2">
-              {project?.liveUrl && (
+              {hasLiveDemo && (
                 <Button
                   variant="default"
                   size="sm"

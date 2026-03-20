@@ -60,6 +60,7 @@ const FeaturedProjects = () => {
 
 
   const currentProject = projects?.[activeProject];
+  const hasLiveDemo = currentProject?.liveUrl && !currentProject?.liveUrl?.includes('example.com');
 
   const handlePrevious = () => {
     setActiveProject((prev) => prev === 0 ? projects?.length - 1 : prev - 1);
@@ -129,15 +130,17 @@ const FeaturedProjects = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3 mt-6">
-                  <Button
-                    variant="default"
-                    iconName="ExternalLink"
-                    iconPosition="right"
-                    onClick={() => window.open(currentProject?.liveUrl, '_blank')}
-                    className="flex-1">
+                  {hasLiveDemo && (
+                    <Button
+                      variant="default"
+                      iconName="ExternalLink"
+                      iconPosition="right"
+                      onClick={() => window.open(currentProject?.liveUrl, '_blank')}
+                      className="flex-1">
 
-                    View Live Demo
-                  </Button>
+                      View Live Demo
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>

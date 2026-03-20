@@ -32,7 +32,7 @@ const Homepage = () => {
           content="Explore my portfolio of 50+ successful projects. Specializing in React, Node.js, and modern web technologies."
         />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://devportfolio.com/homepage" />
+        <link rel="canonical" href="https://devportfolio.com/" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-background">

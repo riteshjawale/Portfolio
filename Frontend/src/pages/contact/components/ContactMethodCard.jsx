@@ -1,6 +1,8 @@
 import Icon from '../../../components/AppIcon';
 
 const ContactMethodCard = ({ icon, title, value, link, description }) => {
+  if (!link) return null;
+
   return (
     <a
       href={link}
