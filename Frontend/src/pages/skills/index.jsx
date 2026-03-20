@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Header from '../../components/ui/Header';
 import Footer from '../../components/ui/Footer';
@@ -560,20 +561,20 @@ const Skills = () => {
                     I'm always excited to tackle new challenges and learn new technologies.
                   </p>
                   <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">
-                    <a
-                      href="/contact"
+                    <Link
+                      to="/contact"
                       className="px-6 py-3 bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 text-primary-foreground rounded-lg font-medium hover:from-blue-700 hover:via-blue-600 hover:to-cyan-600 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2">
 
                       <Icon name="MessageSquare" size={20} />
                       <span>Start a Conversation</span>
-                    </a>
-                    <a
-                      href="/portfolio"
+                    </Link>
+                    <Link
+                      to="/portfolio"
                       className="px-6 py-3 bg-card border border-border rounded-lg font-medium hover:bg-muted transition-colors duration-200 flex items-center gap-2">
 
                       <Icon name="Briefcase" size={20} />
                       <span>View My Work</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

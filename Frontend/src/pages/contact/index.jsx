@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Header from '../../components/ui/Header';
 import Footer from '../../components/ui/Footer';
 import FloatingCTA from '../../components/ui/FloatingCTA';
@@ -14,6 +15,7 @@ import AvailabilityIndicator from './components/AvailabilityIndicator';
 import SuccessModal from './components/SuccessModal';
 
 const Contact = () => {
+  const navigate = useNavigate();
   const [currentStep, setCurrentStep] = useState(1);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [formData, setFormData] = useState({
@@ -54,10 +56,10 @@ const Contact = () => {
   },
   {
     icon: 'Calendar',
-    title: 'Schedule Call',
-    value: 'Book 30-min consultation',
-    link: 'https://calendly.com/devportfolio',
-    description: 'Direct calendar booking for meetings'
+    title: 'Availability',
+    value: 'Email to schedule a meeting',
+    link: 'mailto:jawaleritesh1@gmail.com?subject=Project%20Consultation',
+    description: 'Use email to coordinate a call or meeting time'
   }];
 
 
@@ -513,16 +515,16 @@ const Contact = () => {
                   size="lg"
                   iconName="Calendar"
                   iconPosition="left"
-                  onClick={() => window.open('https://calendly.com/devportfolio', '_blank')}>
+                  onClick={() => window.location.href = 'mailto:jawaleritesh1@gmail.com?subject=Project%20Consultation'}>
 
-                  Schedule a Call
+                  Email to Schedule
                 </Button>
                 <Button
                   variant="outline"
                   size="lg"
                   iconName="FileText"
                   iconPosition="left"
-                  onClick={() => window.open('/portfolio', '_self')}>
+                  onClick={() => navigate('/portfolio')}>
 
                   View Portfolio
                 </Button>

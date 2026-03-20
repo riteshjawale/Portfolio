@@ -6,7 +6,6 @@ const Breadcrumbs = () => {
   const pathnames = location?.pathname?.split('/')?.filter((x) => x);
 
   const breadcrumbNameMap = {
-    homepage: 'Home',
     portfolio: 'Portfolio',
     about: 'About',
     skills: 'Skills',
@@ -14,7 +13,7 @@ const Breadcrumbs = () => {
     contact: 'Contact',
   };
 
-  if (pathnames?.length === 0 || (pathnames?.length === 1 && pathnames?.[0] === 'homepage')) {
+  if (pathnames?.length === 0) {
     return null;
   }
 
@@ -23,7 +22,7 @@ const Breadcrumbs = () => {
       <ol className="flex items-center gap-2 text-sm">
         <li>
           <Link
-            to="/homepage"
+            to="/"
             className="flex items-center text-muted-foreground hover:text-foreground transition-colors duration-200"
           >
             <Icon name="Home" size={16} />

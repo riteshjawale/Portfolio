@@ -1,7 +1,9 @@
+import { useNavigate } from 'react-router-dom';
 import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
 
 const CTASection = () => {
+  const navigate = useNavigate();
   const downloadOptions = [
     {
       format: 'PDF',
@@ -68,7 +70,7 @@ const CTASection = () => {
                   size="lg"
                   iconName="MessageSquare"
                   iconPosition="left"
-                  onClick={() => window.location.href = '/contact'}
+                  onClick={() => navigate('/contact')}
                   className="bg-white text-primary hover:bg-white/90"
                 >
                   Start a Conversation

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Icon from '../AppIcon';
 import Button from './Button';
 
@@ -7,9 +7,10 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const navigationItems = [
-    { path: '/homepage', label: 'Home', icon: 'Home' },
+    { path: '/', label: 'Home', icon: 'Home' },
     { path: '/portfolio', label: 'Portfolio', icon: 'Briefcase' },
     { path: '/about', label: 'About', icon: 'User' },
     { path: '/skills', label: 'Skills', icon: 'Code' },
@@ -38,6 +39,9 @@ const Header = () => {
   }, [isMobileMenuOpen]);
 
   const isActivePath = (path) => {
+    if (path === '/') {
+      return location?.pathname === '/';
+    }
     return location?.pathname === path;
   };
 
@@ -58,7 +62,7 @@ const Header = () => {
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <Link to="/homepage" className="header-logo">
+            <Link to="/" className="header-logo">
               <div className="header-logo-icon">
                 <Icon name="Code2" size={24} color="var(--color-primary)" />
               </div>
@@ -92,7 +96,7 @@ const Header = () => {
                 size="sm"
                 iconName="Mail"
                 iconPosition="left"
-                onClick={() => (window.location.href = '/contact')}
+                onClick={() => navigate('/contact')}
               >
                 Contact
               </Button>
@@ -111,7 +115,7 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className="mobile-menu-overlay animate-fade-in lg:hidden">
           <div className="flex items-center justify-between h-16 px-4 border-b border-border">
-            <Link to="/homepage" className="header-logo" onClick={handleMobileLinkClick}>
+            <Link to="/" className="header-logo" onClick={handleMobileLinkClick}>
               <div className="header-logo-icon">
                 <Icon name="Code2" size={24} color="var(--color-primary)" />
               </div>
@@ -161,7 +165,7 @@ const Header = () => {
               iconName="Mail"
               iconPosition="left"
               onClick={() => {
-                window.location.href = '/contact';
+                navigate('/contact');
                 handleMobileLinkClick();
               }}
             >

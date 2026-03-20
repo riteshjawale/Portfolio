@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Image from '../../../components/AppImage';
 import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
@@ -6,6 +7,7 @@ import dp from '../../../assets/Ritesh.png'
 
 const HeroSection = () => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const navigate = useNavigate();
 
   const stats = [
   { value: '2+', label: 'Years Experience', icon: 'Calendar' },
@@ -53,7 +55,7 @@ const HeroSection = () => {
                 size="lg"
                 iconName="Mail"
                 iconPosition="left"
-                onClick={() => window.location.href = '/contact'}>
+                onClick={() => navigate('/contact')}>
 
                 Get in Touch
               </Button>

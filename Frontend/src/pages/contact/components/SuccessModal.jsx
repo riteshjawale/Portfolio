@@ -1,7 +1,10 @@
+import { useNavigate } from 'react-router-dom';
 import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
 
 const SuccessModal = ({ isOpen, onClose, formData }) => {
+  const navigate = useNavigate();
+
   if (!isOpen) return null;
 
   return (
@@ -23,7 +26,7 @@ const SuccessModal = ({ isOpen, onClose, formData }) => {
             <Button variant="outline" fullWidth onClick={onClose}>
               Send Another Message
             </Button>
-            <Button variant="default" fullWidth onClick={() => (window.location.href = '/homepage')}>
+            <Button variant="default" fullWidth onClick={() => navigate('/')}>
               Back to Home
             </Button>
           </div>
